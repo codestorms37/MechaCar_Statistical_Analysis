@@ -11,7 +11,7 @@
 
 ## Results
 
-### 1 Linear Regression to Predict MPG
+### 1. Linear Regression to Predict MPG
 
 ![Linear regression MPG](./Resources/images/linear_regression_MPG.png)
 
@@ -19,12 +19,12 @@
   - As observed in Pr(<|t|) vehicle_length, vehicle_weight and the Intercept are statistically unlikely to provide random amounts of variance to the linear model.
 
 - Is the slope of the linear model considered to be zero? Why or why not?
-  - No, as the p-value of the model (5.35e-11) is significantly lower to a confidence value of 0.5%, the Null hypothessis (H0) can be rejected.
+  - No, as the p-value of the model (5.35e-11) is significantly lower to a confidence value of 0.5%, the Null hypothesis (H0) can be rejected.
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-  - The model seems to be fairly effective, as the R-squared is 0.7149.
+  - The model seems to be effective, as the R-squared is 0.7149.
 
-## 2 Summary Statistics on Suspension Coils
+## 2. Summary Statistics on Suspension Coils
 
 ### PSI Total Summary
 
@@ -37,7 +37,7 @@
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
   - Despite that the Variance reported in the Total Summary (62) is not exceeding the quality parameter, the Lot3 is doesn't meet the requirement (170), it should be recalled for inspection.
 
-## 3 T-Tests on Suspension Coils
+## 3. T-Tests on Suspension Coils
 
 ### PSI t-test all lots
 
@@ -51,13 +51,23 @@
 
 - The only lot where the Null Hypothesis is not rejected is Lot 3
 
-## Sumary
+### 4. Study Design: MechaCar vs Competition
 
-### 1 Linear Regression to Predict MPG
+- What metric or metrics are you going to test?
+  - I would select the following metrics:
+    - efficiency in terms of mpg
+    - reliability, in terms of average maintenance cost for the first 5 years.
 
-### 2 Summary Statistics on Suspension Coils
+- What is the null hypothesis (H0) or alternative hypothesis (Ha)?
+  - mpg efficiency:
+    - H0: Mean mpg is equal
+    - Ha: Mean mpg is different
+  - reliability
+    - H0: Mean maintenance cost is equal
+    - Ha: Mean maintenance cost is different
 
-### 3 T-Test on Suspension Coils
+- What statistical test would you use to test the hypothesis? And why?
+  - Two-Sample t-test for both metrics, because I would be looking for a statistical difference between the distribution means from two samples, (MechaCat vs Competition)
 
-### 4 Design a Study Comparing the MechaCar to the Competition
-
+- What data is needed to run the statistical test?
+  - A sample of MechaCar and Competition cars is needed with the measures of mpg and maintenance costs
