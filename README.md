@@ -51,7 +51,7 @@
 
 - The only lot where the Null Hypothesis is not rejected is Lot 3
 
-### 4. Study Design: MechaCar vs Competition
+## 4. Study Design: MechaCar vs Competition
 
 - What metric or metrics are you going to test?
   - I would select the following metrics:
